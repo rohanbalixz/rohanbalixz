@@ -7,7 +7,7 @@
 ## 🧑‍💻 About Me
 I'm a Data Scientist with a passion for Machine Learning. I enjoy working on projects that involve Artificial Intelligence. When I'm not coding, you can find me writing songs.
 
-- 🌱 I’m currently lpursuing M.S., Data Science from University of Massachusetts.
+- 🌱 I’m currently pursuing M.S., Data Science from University of Massachusetts.
 - 💬 Ask me about anything that comes up in your head.
 - 📫 How to reach me: rbali@umassd.edu
 
@@ -32,9 +32,9 @@ analyzed various factors to determine the safest highways in India. Through pred
 variables such as traffic volume, road conditions, accident history, and weather patterns to identify highways with
 the lowest risk of accidents, aiding in strategic road planning and safety enhancement measures.
 
-### Movie Recommendation System(https://github.com/rohanbalixz/Movie-Recommendation-System)
+### Movie Recommendation System - https://github.com/rohanbalixz/Movie-Recommendation-System
 Harnessing data from 5000 movies on TMDB, I implemented a Bag of Words
 model for natural language processing. Utilizing vectorization techniques like TF-IDF, the system generates five
 tailored movie recommendations based on your selection. This method enhances accuracy and personalization.
 
-⭐️ From Rohan Bali (https://github.com/rohanbalixz)
+⭐️ From Rohan Bali - https://github.com/rohanbalixz
