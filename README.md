@@ -13,12 +13,11 @@ I'm a Data Scientist with a passion for Machine Learning. I enjoy working on pro
 
 ## 🛠️ Technologies & Tools
 ![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python)
-![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript)
-![React](https://img.shields.io/badge/-React-333?style=flat&logo=react)
-![Node.js](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
-![Docker](https://img.shields.io/badge/-Docker-333?style=flat&logo=docker)
-![Kubernetes](https://img.shields.io/badge/-Kubernetes-333?style=flat&logo=kubernetes)
-![AWS](https://img.shields.io/badge/-AWS-333?style=flat&logo=amazon-aws)
+![Machine Learning](https://img.shields.io/badge/-Machine%20Learning-333?style=flat&logo=python)
+![Microsoft Azure](https://img.shields.io/badge/-Microsoft%20Azure-333?style=flat&logo=microsoft-azure)
+![Scikit Learn](https://img.shields.io/badge/-Scikit%20Learn-333?style=flat&logo=scikit-learn)
+![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
+![Control-M](https://img.shields.io/badge/-Control-M-333?style=flat&logo=control-m)
 
 ## 🏆 Achievements
 - Microsoft Certified : Azure Fundamentals
