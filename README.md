@@ -17,7 +17,7 @@ I'm a Data Scientist with a passion for Machine Learning. I enjoy working on pro
 ![Microsoft Azure](https://img.shields.io/badge/-Microsoft%20Azure-333?style=flat&logo=microsoft-azure)
 ![Scikit Learn](https://img.shields.io/badge/-Scikit%20Learn-333?style=flat&logo=scikit-learn)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
-![Control-M](https://img.shields.io/badge/-Control-M-333?style=flat&logo=control-m)
+![Natural Language Processing](https://img.shields.io/badge/-Natural%20Language%20Processing-333?style=flat&logo=python)
 
 ## 🏆 Achievements
 - Microsoft Certified : Azure Fundamentals
