@@ -37,4 +37,7 @@ Harnessing data from 5000 movies on TMDB, I implemented a Bag of Words
 model for natural language processing. Utilizing vectorization techniques like TF-IDF, the system generates five
 tailored movie recommendations based on your selection. This method enhances accuracy and personalization.
 
+### Car Price Prediction System - https://github.com/rohanbalixz/Car-Price-Prediction-System
+The Car Resell Price Prediction System utilizes a Linear Regression machine learning model to estimate the resale value of used cars. By analyzing various car attributes and historical sales data, this system provides accurate price predictions, helping users make informed decisions about buying or selling their vehicles.
+
 ⭐️ From Rohan Bali - https://github.com/rohanbalixz
