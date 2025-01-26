@@ -5,7 +5,7 @@
 [![Twitter](https://img.shields.io/badge/Twitter-Follow-blue)](https://x.com/bali2ro)
 
 ## 🧑‍💻 About Me
-I'm a Data Scientist with a passion for Machine Learning. I enjoy working on projects that involve Artificial Intelligence. When I'm not coding, you can find me writing songs.
+I'm a Data Scientist with a passion for Machine Learning. I enjoy working on projects that involve Artificial Intelligence. When I'm not coding, you can find me hiking.
 
 - 🌱 I’m currently pursuing M.S., Data Science from University of Massachusetts.
 - 💬 Ask me about anything that comes up in your head.
