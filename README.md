@@ -8,8 +8,8 @@
 ---
 
 ## About Me
-Hi, I’m **Rohan Bali** — a **Data Scientist & Machine Learning Engineer** passionate about designing intelligent systems that **think, learn, and evolve**.  
-I blend research, engineering, and storytelling to bring data to life — from **AI-driven healthcare models** to **network intelligence systems**.
+Hi, I’m **Rohan Bali**, a **Data Scientist & Machine Learning Engineer** passionate about designing intelligent systems that **think, learn, and evolve**.  
+I blend research, engineering, and storytelling to bring data to life, from **AI-driven healthcare models** to **network intelligence systems**.
 
 **M.S. in Data Science** — *University of Massachusetts Dartmouth*  
 Ex–**Software Engineer / Analyst (A4) @ Capgemini** | Former **ML Trainee @ Upcred.ai**  
@@ -92,7 +92,7 @@ Designed predictive insights for **regional policy analysis and election forecas
 ---
 
 ## Current Focus
-- Building **BrainLab OS** — a modular AI that learns continuously.  
+- Building **BrainLab OS**, a modular AI that learns continuously.  
 - Developing **Generative Agents** with emotional intelligence and self-reflection.  
 - Experimenting with **LLM–Vector Database Integration** for contextual retrieval.  
 - Exploring **Neural Symbolic Reasoning** and **Personalized AI Companions**.
