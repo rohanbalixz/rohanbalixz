@@ -1,4 +1,4 @@
-# 👋 Hello, I'm Rohan Bali
+# Hello, I'm Rohan Bali
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/rohan-bali-301345293/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-brightgreen)](https://github.com/rohanbalixz)
@@ -7,14 +7,14 @@
 
 ---
 
-## 🧠 About Me
+## About Me
 Hi, I’m **Rohan Bali** — a **Data Scientist & Machine Learning Engineer** passionate about designing intelligent systems that **think, learn, and evolve**.  
 I blend research, engineering, and storytelling to bring data to life — from **AI-driven healthcare models** to **network intelligence systems**.
 
-🎓 **M.S. in Data Science** — *University of Massachusetts Dartmouth*  
-💼 Ex–**Software Engineer @ Capgemini** | Former **ML Trainee @ Upcred.ai**  
-📚 Researching **LLM-based System Design**, **Graph Intelligence**, and **Networked AI**  
-🚀 Building applied AI projects that drive measurable, real-world impact.
+**M.S. in Data Science** — *University of Massachusetts Dartmouth*  
+Ex–**Software Engineer / Analyst (A4) @ Capgemini** | Former **ML Trainee @ Upcred.ai**  
+Researching **LLM-based System Design**, **Graph Intelligence**, and **Networked AI**  
+Building applied AI projects that drive measurable, real-world impact.
 
 📫 Reach me at: **rbali@umassd.edu**
 
@@ -22,33 +22,33 @@ I blend research, engineering, and storytelling to bring data to life — from *
 
 ## ⚙️ Skills & Technologies
 
-### 🤖 Machine Learning & AI
+### Machine Learning & AI
 `Supervised & Unsupervised Learning`, `Deep Learning`, `NLP`, `LLMs`, `Transfer Learning`, `Prompt Engineering`, `Reinforcement Learning`
 
-### 💻 Programming & Frameworks
+### Programming & Frameworks
 `Python`, `R`, `SQL`, `PyTorch`, `TensorFlow`, `Keras`, `Scikit-Learn`, `Hugging Face`, `NLTK`, `SpaCy`
 
-### 📊 Data Science & Analytics
+### Data Science & Analytics
 `Pandas`, `NumPy`, `SciPy`, `Statsmodels`, `Matplotlib`, `Seaborn`, `Plotly`, `Tableau`, `Power BI`, `Excel Analytics`
 
-### ☁️ Cloud & Data Engineering
+### Cloud & Data Engineering
 `AWS`, `Azure`, `Google Cloud`, `Spark`, `Hadoop`, `Hive`, `BigQuery`, `Databricks`, `ETL`, `Docker`, `Airflow`, `Data Warehousing`
 
-### 🧩 Research & System Design
+### Research & System Design
 `Graph Theory`, `Network Science`, `Distributed Systems`, `LLM Orchestration`, `Optimization`, `Causal Inference`, `Algorithmic Thinking`
 
 ---
 
 ## 🏆 Certifications & Achievements
-- 🎖️ **Microsoft Certified:** Azure Fundamentals & Machine Learning Engineer  
-- 🧠 **NVIDIA DLI:** Disaster Risk Monitoring Using Satellite Imagery  
-- 💾 Built **Local MapReduce System using LevelDB** — featured as a reference implementation  
-- 🧩 Research on **Academic Collaboration Networks** using *Small-World Theory*  
-- ⚙️ Developed **LLM-powered AI Pipelines** and **Cognitive System Prototypes**
+- **Microsoft Certified:** Azure Fundamentals & Machine Learning Engineer  
+- **NVIDIA DLI:** Disaster Risk Monitoring Using Satellite Imagery  
+- Built **Local MapReduce System using LevelDB** — featured as a reference implementation  
+- Research on **Academic Collaboration Networks** using *Small-World Theory*  
+- Developed **LLM-powered AI Pipelines** and **Cognitive System Prototypes**
 
 ---
 
-## 🚀 Flagship Projects
+## Top 10 Personal Projects
 
 ### 🧠 [BrainLab OS](https://github.com/rohanbalixz/BrainLab)
 A **self-evolving, memory-driven AI Operating System** inspired by the human brain.  
@@ -91,7 +91,7 @@ Designed predictive insights for **regional policy analysis and election forecas
 
 ---
 
-## 🔭 Current Focus
+## Current Focus
 - Building **BrainLab OS** — a modular AI that learns continuously.  
 - Developing **Generative Agents** with emotional intelligence and self-reflection.  
 - Experimenting with **LLM–Vector Database Integration** for contextual retrieval.  
