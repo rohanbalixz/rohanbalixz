@@ -138,16 +138,13 @@ Emotion-aware transformer-based conversational agent.
 
 ---
 
-# **Publications**
+# **Preprints**
 
 - **“Understanding Academic Collaboration Networks through Small World Theory.”**  
   https://swn465.home.blog/2024/12/12/understanding-academic-collaboration-networks-through-small-world/
 
 - **“Neural Time Capsule: Urban Growth Prediction.”**  
-  https://github.com/rohanbalixz/NeuralTimeCapsule/blob/main/paper/Bali2025_NeuralTimeCapsule_UrbanGrowthPrediction.pdf  
-
-- **Google Scholar Profile**  
-  https://scholar.google.com/citations?user=CBgU9IIAAAAJ&hl=en
+  https://github.com/rohanbalixz/NeuralTimeCapsule/blob/main/paper/Bali2025_NeuralTimeCapsule_UrbanGrowthPrediction.pdf
 
 ---
 
