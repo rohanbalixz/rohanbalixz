@@ -89,7 +89,7 @@ Boston, MA
 
 #### Venues
 
-- **GeoAI 2026** — 9th ACM SIGSPATIAL International Workshop on Geospatial Artificial Intelligence. Oral presentation. Ghent, Belgium. November 2026.
+- **GeoAI 2026** — 1st International Conference on Geospatial Artificial Intelligence (GeoAI 2026). Oral presentation. Ghent, Belgium. June 2026.
 - **SpatialDI 2026** — 7th International Conference on Spatial Data and Intelligence (ACM SIGSPATIAL China Chapter). Springer LNCS proceedings. Changsha, China. April 2026.
 
 ---
