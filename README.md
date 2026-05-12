@@ -63,17 +63,16 @@ Boston, MA
         <img src="https://img.shields.io/badge/SpatialDI_2026-Springer_LNCS-2ea043?style=flat-square" alt="SpatialDI 2026 Springer LNCS" />
       </p>
       <p>
-        Every multi-horizon urban growth benchmark I could find showed the same 
-        pattern: CNN accuracy drops at longer horizons, ConvLSTM improves. The 
-        standard explanation was architectural. It turns out 94% of that gap 
-        is a channel-count confound — advancing the horizon also removes an input 
-        epoch, and nobody had controlled for it. Tested across 5,698 CONUS tiles 
-        at 250m. The confound structure applies anywhere multi-horizon benchmarks 
+        Every multi-horizon urban growth benchmark I could find showed the same
+        pattern: CNN accuracy drops at longer horizons, ConvLSTM improves. The
+        standard explanation was architectural. It turns out 94% of that gap
+        is a channel-count confound — advancing the horizon also removes an input
+        epoch, and nobody had controlled for it. Tested across 5,698 CONUS tiles
+        at 250m. The confound structure applies anywhere multi-horizon benchmarks
         shorten the encoder window as the target moves forward.
       </p>
       <p>
         <a href="https://github.com/rohanbalixz/Multi-Horizon-Urban-Growth-Prediction"><strong>Code & data</strong></a> ·
-        <a href="https://github.com/rohanbalixz/NeuralTimeCapsule"><strong>NeuralTimeCapsule repo</strong></a> ·
         <em>arXiv pending</em>
       </p>
     </td>
