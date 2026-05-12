@@ -66,7 +66,7 @@ Boston, MA
         Every multi-horizon urban growth benchmark I could find showed the same
         pattern: CNN accuracy drops at longer horizons, ConvLSTM improves. The
         standard explanation was architectural. It turns out 94% of that gap
-        is a channel-count confound — advancing the horizon also removes an input
+        is a channel-count confound, advancing the horizon also removes an input
         epoch, and nobody had controlled for it. Tested across 5,698 CONUS tiles
         at 250m. The confound structure applies anywhere multi-horizon benchmarks
         shorten the encoder window as the target moves forward.
