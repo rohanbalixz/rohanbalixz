@@ -45,7 +45,7 @@ Boston, MA
 <table>
   <tr>
     <td width="42%" valign="top">
-      <img src="assets/teaser.png" alt="Mid-Atlantic held-out tile: ground truth, ConvLSTM prediction, and MC Dropout uncertainty" />
+      <img src="https://github.com/rohanbalixz/Multi-Horizon-Urban-Growth-Prediction/blob/main/results/figures/fig7_uncertainty.png" alt="Mid-Atlantic held-out tile: ground truth, ConvLSTM prediction, and MC Dropout uncertainty" />
       <p align="center"><sub><em>Mid-Atlantic held-out tile — ground truth, ConvLSTM prediction, and MC Dropout uncertainty (20 stochastic forward passes).</em></sub></p>
     </td>
     <td width="58%" valign="top">
