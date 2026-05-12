@@ -26,18 +26,15 @@
 
 ---
 
-I build and interrogate machine-learning models for Earth systems — using satellite-derived, 
-geophysical, and sociodemographic data to understand how cities grow, landscapes change, 
-and climate pressures propagate across space and time.
+I work on ML for spatiotemporal systems, mostly using satellite and geophysical data.
+The questions I keep coming back to: what does a model actually learn from a sequence
+of observations, when does that break down, and does it still hold somewhere it was
+never trained?
 
-My research sits at the intersection of spatiotemporal representation learning and 
-rigorous evaluation: I care not just about whether a model predicts well, but about 
-what its learned representations actually encode, where standard benchmarks silently 
-mislead, and whether predictions hold when the geography shifts. Urban growth is my 
-proving ground; Earth and climate systems are the destination.
+Urban growth is where I've been working. Earth and climate systems are where I'm headed.
 
 **M.S. Data Science**, University of Massachusetts Dartmouth · 2024 – 2026  
-Applying to PhD programs in **Geospatial AI and Earth & Climate Systems ML** · **Fall 2027 entry**  
+Applying to PhD programs in Geospatial AI and Earth & Climate Systems ML · Fall 2027  
 Boston, MA
 
 ---
@@ -45,8 +42,8 @@ Boston, MA
 ## Research Interests
 
 `spatiotemporal representation learning` `geospatial AI` `earth observation & remote sensing`
-`climate & land systems ML` `distribution shift & geographic transfer` 
-`benchmark design & evaluation methodology` `uncertainty quantification`
+`climate & land systems ML` `distribution shift & geographic transfer`
+`evaluation methodology` `uncertainty quantification`
 
 ---
 
@@ -66,13 +63,13 @@ Boston, MA
         <img src="https://img.shields.io/badge/SpatialDI_2026-Springer_LNCS-2ea043?style=flat-square" alt="SpatialDI 2026 Springer LNCS" />
       </p>
       <p>
-        A controlled isolation experiment across <strong>5,698 CONUS tiles at 250 m</strong> 
-        showing that <strong>94%</strong> of the apparent architectural advantage of recurrent 
-        encoders over convolutional ones at longer forecast horizons is a 
-        <strong>channel-count confound</strong> — present in every prior multi-horizon 
-        urban-growth benchmark examined. Urban growth as testbed; the findings apply 
-        wherever multi-horizon benchmarks shorten the encoder window as the prediction 
-        target moves forward.
+        Every multi-horizon urban growth benchmark I could find showed the same 
+        pattern: CNN accuracy drops at longer horizons, ConvLSTM improves. The 
+        standard explanation was architectural. It turns out 94% of that gap 
+        is a channel-count confound — advancing the horizon also removes an input 
+        epoch, and nobody had controlled for it. Tested across 5,698 CONUS tiles 
+        at 250m. The confound structure applies anywhere multi-horizon benchmarks 
+        shorten the encoder window as the target moves forward.
       </p>
       <p>
         <a href="https://github.com/rohanbalixz/Multi-Horizon-Urban-Growth-Prediction"><strong>Code & data</strong></a> ·
@@ -85,11 +82,11 @@ Boston, MA
 
 #### Key results
 
-- **Channel-matched CNN leads at every horizon.** FoM **0.702 ± 0.019** on the 2015 spatial holdout; **0.252 ± 0.009** on a fully sealed 2020 temporal holdout — trained weights never touched 2020 data.
-- **ConvLSTM's multi-horizon gain traced to a 5.4× asymmetric sensitivity** to terminal-epoch removal — recency anchoring in the hidden state, not general long-horizon architectural capacity.
-- **Algebraic derivation** showing MSE inverts model rankings at growth fractions below ~11%; FoM is the only operative metric in this regime. FoM-aligned Soft-Jaccard training collapses to a near-null predictor — a 4.2× degradation versus MSE training evaluated under FoM.
-- **Zero-shot transfer to Lagos, Nigeria** (20 tiles, 69.6% growth fraction): recency-anchored ConvLSTM transfers *below* pixel-wise linear extrapolation; flat-channel CNN degrades gracefully — consistent with domain-specific hidden-state encoding as the failure mechanism.
-- **MC Dropout uncertainty calibrated** at **r = 0.983** across decile bins (≈8.7M pixels); rank ordering reliable for field prioritization; magnitudes underestimated 1.4–1.9× without post-hoc scaling.
+- Channel-matched CNN leads at every horizon. FoM 0.702 ± 0.019 on the 2015 spatial holdout; 0.252 ± 0.009 on a sealed 2020 temporal holdout.
+- ConvLSTM's gain across horizons traces to a 5.4x asymmetric sensitivity to removing the most recent epoch, not a general long-horizon architectural advantage.
+- MSE inverts model rankings algebraically when fewer than ~11% of pixels change. Derived formally. Soft-Jaccard training, which is nominally FoM-aligned, collapses to near-null predictions — 4.2x worse FoM than MSE training.
+- Zero-shot transfer to Lagos, Nigeria (69.6% growth fraction): ConvLSTM falls below pixel-wise linear extrapolation. CNN degrades more gracefully. The gap connects back to recency anchoring in the hidden state.
+- MC Dropout uncertainty correlates with actual error at r = 0.983 across decile bins (~8.7M pixels). Rank ordering is reliable; magnitudes are underestimated 1.4–1.9x and need post-hoc scaling before use as coverage bounds.
 
 #### Venues
 
@@ -103,37 +100,34 @@ Boston, MA
 ### Disaster Risk Monitoring from Satellite Radar
 *NVIDIA Deep Learning Institute · Earth Observation Track*
 
-U-Net trained on Sentinel-1 synthetic-aperture-radar imagery for flood-extent detection 
-at scale, with SAR-specific preprocessing (speckle filtering, dB conversion, 
-polarization-aware augmentation). **Dice 0.82 · IoU 0.78.** Inference pipeline 
-integrated with Google Earth Engine for operational deployment.
+U-Net trained on Sentinel-1 SAR imagery for flood-extent detection, with SAR-specific
+preprocessing (speckle filtering, dB conversion, polarization-aware augmentation).
+Dice 0.82, IoU 0.78. Inference pipeline integrated with Google Earth Engine.
 
-This project and the urban growth work share a common thread: both use multitemporal 
-satellite observation stacks to detect where and how Earth's surface is changing — 
-and both expose where standard ML pipelines silently fail on geospatial data.
+Same core problem as the urban growth work: multitemporal satellite stacks,
+sparse change signal, and a standard pipeline that doesn't account for
+what makes geospatial data different.
 
-[Repository →](https://github.com/rohanbalixz/Disaster-Risk-Monitoring-Using-Satellite-Imagery)
+[Repository](https://github.com/rohanbalixz/Disaster-Risk-Monitoring-Using-Satellite-Imagery)
 
 ### Small-World Structure in Academic Collaboration
 *Advised by Prof. Dana S. Fine, University of Massachusetts Dartmouth*
 
-Co-authorship networks constructed and analyzed across **12 academic fields, 180K+ edges**. 
-Finding: **72% of researchers in the top citation percentile sit within a 3-hop neighborhood** 
-of one another — with implications for how ideas, reputation, and opportunity concentrate 
-and propagate through scientific communities.
+Co-authorship networks across 12 academic fields, 180K+ edges. 72% of researchers
+in the top citation percentile sit within 3 hops of each other in their field graph.
+The structure has consequences for how ideas and opportunity move through science.
 
-[Repository →](https://github.com/rohanbalixz/Understanding-Academic-Collaboration-Networks-Through-Small-World-Theory)
+[Repository](https://github.com/rohanbalixz/Understanding-Academic-Collaboration-Networks-Through-Small-World-Theory)
 
 ---
 
 ## Currently
 
-Extending the multi-horizon work toward **causal land-cover and climate-system modeling** — 
-asking not just where growth or change will occur, but what drives it, and whether 
-those drivers transfer across geographies and climate regimes. Preparing follow-on 
-submissions and PhD applications for Fall 2027.
+Working on causal modeling for land-cover change and figuring out where and why
+spatiotemporal models fail when the geography shifts. Preparing follow-on submissions
+and PhD applications for Fall 2027.
 
-Open to collaborations in geospatial AI, earth observation ML, and spatiotemporal 
+Open to collaborations in geospatial AI, earth observation ML, and spatiotemporal
 representation learning.
 
 <p align="left">
