@@ -56,7 +56,7 @@ Boston, MA
       <p align="center"><sub><em>Mid-Atlantic held-out tile — ground truth, ConvLSTM prediction, and MC Dropout uncertainty (20 stochastic forward passes).</em></sub></p>
     </td>
     <td width="58%" valign="top">
-      <h3>Channel Count, Not Horizon Length, Drives Architectural Divergence in Multi-Horizon Urban Growth Prediction</h3>
+      <h3>The Channel-Count Confound: A Continental Audit of Multi-horizon Urban Growth Prediction</h3>
       <p><strong>Rohan Bali.</strong> Solo-authored.</p>
       <p>
         <img src="https://img.shields.io/badge/GeoAI_2026-Oral-1f6feb?style=flat-square" alt="GeoAI 2026 Oral" />
