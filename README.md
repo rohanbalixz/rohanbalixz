@@ -130,7 +130,7 @@ Open to collaborations in geospatial AI, earth observation ML, and spatiotempora
 representation learning.
 
 <p align="left">
-  <a href="mailto:rohanbaliwork@gmail.com">
-    <img src="https://img.shields.io/badge/Email-rohanbaliwork@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
+  <a href="mailto:rbali@umassd.edu">
+    <img src="https://img.shields.io/badge/Email-rbali@umassd.edu-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
   </a>
 </p>
