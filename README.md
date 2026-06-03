@@ -21,7 +21,7 @@
   <a href="https://scholar.google.com/citations?user=CBgU9IIAAAAJ&hl=en">Scholar</a> ·
   <a href="https://www.linkedin.com/in/rohan-bali-301345293/">LinkedIn</a> ·
   <a href="https://x.com/bali2ro">Twitter / X</a> ·
-  <a href="mailto:rohanbaliwork@gmail.com">rohanbaliwork@gmail.com</a>
+  <a href="mailto:rbali@umassd.edu">rbali@umassd.edu</a>
 </p>
 
 ---
