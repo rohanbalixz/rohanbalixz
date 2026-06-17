@@ -1,136 +1,40 @@
-<h1 align="center">Rohan Bali</h1>
+# Rohan Bali
 
-<p align="center">
-  <em>Geospatial AI · Earth & Climate Systems ML · Spatiotemporal Representation Learning</em>
-</p>
+I'm an M.S. Data Science student at the University of Massachusetts Dartmouth. I work on how machine learning models for satellite and Earth data get tested, and whether they hold up once the region or the data changes.
 
-<p align="center">
-  <a href="https://github.com/rohanbalixz/Multi-Horizon-Urban-Growth-Prediction">
-    <img src="https://img.shields.io/badge/GeoAI_2026-Oral-1f6feb?style=flat-square" alt="GeoAI 2026 Oral" />
-  </a>
-  <a href="https://github.com/rohanbalixz/Multi-Horizon-Urban-Growth-Prediction">
-    <img src="https://img.shields.io/badge/SpatialDI_2026-Springer_LNCS-2ea043?style=flat-square" alt="SpatialDI 2026 Springer LNCS" />
-  </a>
-  <a href="https://scholar.google.com/citations?user=CBgU9IIAAAAJ&hl=en">
-    <img src="https://img.shields.io/badge/Google_Scholar-Profile-4285F4?style=flat-square&logo=googlescholar&logoColor=white" alt="Google Scholar" />
-  </a>
-</p>
+A lot of papers say one model beats another. I spend most of my time checking whether that is actually true, because the win often comes from how the data was set up rather than from the model. So I take benchmarks apart and see how much of a result is still there once the test gets harder. Right now that is urban growth prediction, cross-region transfer, and uncertainty under shift. I am applying to PhD programs for Fall 2027.
 
-<p align="center">
-  <a href="https://rohanbalixz.github.io/rohan-bali-portfolio/">Portfolio</a> ·
-  <a href="https://scholar.google.com/citations?user=CBgU9IIAAAAJ&hl=en">Scholar</a> ·
-  <a href="https://www.linkedin.com/in/rohan-bali-301345293/">LinkedIn</a> ·
-  <a href="https://x.com/bali2ro">Twitter / X</a> ·
-  <a href="mailto:rbali@umassd.edu">rbali@umassd.edu</a>
-</p>
+[Website](https://rohanbalixz.github.io/rohan-bali-portfolio/) · [Google Scholar](https://scholar.google.com/citations?user=CBgU9IIAAAAJ&hl=en) · [ORCID](https://orcid.org/0009-0001-9880-3906) · [OpenReview](https://openreview.net/profile?id=~Rohan_Bali1) · [LinkedIn](https://www.linkedin.com/in/rohan-bali-301345293/) · rbali@umassd.edu
 
----
+## Papers
 
-I work on ML for spatiotemporal systems, mostly using satellite and geophysical data.
-The questions I keep coming back to: what does a model actually learn from a sequence
-of observations, when does that break down, and does it still hold somewhere it was
-never trained?
+**The Channel-Count Confound: A Continental Audit of Multi-Horizon Urban Growth Prediction**  
+SpatialDI 2026 (Springer LNCS), and GeoAI 2026 as an oral. Sole author.
 
-Urban growth is where I've been working. Earth and climate systems are where I'm headed.
+People keep reporting that ConvLSTMs beat plain CNNs at predicting urban growth further into the future. I checked that across 305M pixels of the continental US. Once you seal the 2020 holdout, test cold on Lagos, and calibrate the uncertainty over 8.69M pixels, the ConvLSTM lead at longer horizons mostly goes away. About 94% of it came from the number of input channels, not from the model learning anything better.
 
-**M.S. Data Science**, University of Massachusetts Dartmouth · 2024 – 2026  
-Applying to PhD programs in Geospatial AI and Earth & Climate Systems ML · Fall 2027  
-Boston, MA
+[Code and data](https://github.com/rohanbalixz/Multi-Horizon-Urban-Growth-Prediction) · [PDF](https://zenodo.org/records/20278403)
 
----
+**Train Anywhere, Test Everywhere: Cross-Region Transfer in Earth Observation Is Decided by the Data, Not the Model**  
+In progress, aimed at SIGSPATIAL 2026. Sole author.
 
-## Research Interests
+I trained one model per region and tested every model on every region across twenty regions. The training source barely matters. The test region sets the score, and a one-line rule that just extends each region's recent past beats every trained model. Change the input instead and transfer falls along a spectrum, from harmonized products that carry over to raw reflectance that hardly does. The same pattern shows up again on the published PANGAEA benchmark.
 
-`spatiotemporal representation learning` `geospatial AI` `earth observation & remote sensing`
-`climate & land systems ML` `distribution shift & geographic transfer`
-`evaluation methodology` `uncertainty quantification`
+[Code and data](https://github.com/rohanbalixz/Cross-Region-Source-Invariance-in-Earth-Observation)
 
----
+**UrbanFinance: Forecasting the Latent Land-Demand Residual across Divergent Indian Metros**  
+In progress. Sole author.
 
-## Featured Publication
+Instead of predicting built-up area or price, this one goes after the gap between where the demand for land is and where building actually happened, across five very different Indian metros. The model holds up better than the usual baselines, and when a whole city is held out it still transfers to that unseen city.
 
-<table>
-  <tr>
-    <td width="42%" valign="top">
-      <img src="https://github.com/rohanbalixz/Multi-Horizon-Urban-Growth-Prediction/blob/main/results/figures/fig7_uncertainty.png" alt="Mid-Atlantic held-out tile: ground truth, ConvLSTM prediction, and MC Dropout uncertainty" />
-      <p align="center"><sub><em>Mid-Atlantic held-out tile — ground truth, ConvLSTM prediction, and MC Dropout uncertainty (20 stochastic forward passes).</em></sub></p>
-    </td>
-    <td width="58%" valign="top">
-      <h3>The Channel-Count Confound: A Continental Audit of Multi-horizon Urban Growth Prediction</h3>
-      <p><strong>Rohan Bali.</strong> Solo-authored.</p>
-      <p>
-        <img src="https://img.shields.io/badge/GeoAI_2026-Oral-1f6feb?style=flat-square" alt="GeoAI 2026 Oral" />
-        <img src="https://img.shields.io/badge/SpatialDI_2026-Springer_LNCS-2ea043?style=flat-square" alt="SpatialDI 2026 Springer LNCS" />
-      </p>
-      <p>
-        Every multi-horizon urban growth benchmark I could find showed the same
-        pattern: CNN accuracy drops at longer horizons, ConvLSTM improves. The
-        standard explanation was architectural. It turns out 94% of that gap
-        is a channel-count confound, advancing the horizon also removes an input
-        epoch, and nobody had controlled for it. Tested across 5,698 CONUS tiles
-        at 250m. The confound structure applies anywhere multi-horizon benchmarks
-        shorten the encoder window as the target moves forward.
-      </p>
-      <p>
-        <a href="https://github.com/rohanbalixz/Multi-Horizon-Urban-Growth-Prediction"><strong>Code & data</strong></a> ·
-        <em>arXiv pending</em>
-      </p>
-    </td>
-  </tr>
-</table>
+## A few other things
 
-#### Key results
+**Disaster Risk Monitoring from Satellite Radar** (NVIDIA Deep Learning Institute). A U-Net for flood detection on Sentinel-1 SAR, with preprocessing tuned to radar noise. Dice 0.82, IoU 0.78, wired into Google Earth Engine. [Repository](https://github.com/rohanbalixz/Disaster-Risk-Monitoring-Using-Satellite-Imagery)
 
-- Channel-matched CNN leads at every horizon. FoM 0.702 ± 0.019 on the 2015 spatial holdout; 0.252 ± 0.009 on a sealed 2020 temporal holdout.
-- ConvLSTM's gain across horizons traces to a 5.4x asymmetric sensitivity to removing the most recent epoch, not a general long-horizon architectural advantage.
-- MSE inverts model rankings algebraically when fewer than ~11% of pixels change. Derived formally. Soft-Jaccard training, which is nominally FoM-aligned, collapses to near-null predictions — 4.2x worse FoM than MSE training.
-- Zero-shot transfer to Lagos, Nigeria (69.6% growth fraction): ConvLSTM falls below pixel-wise linear extrapolation. CNN degrades more gracefully. The gap connects back to recency anchoring in the hidden state.
-- MC Dropout uncertainty correlates with actual error at r = 0.983 across decile bins (~8.7M pixels). Rank ordering is reliable; magnitudes are underestimated 1.4–1.9x and need post-hoc scaling before use as coverage bounds.
-
-#### Venues
-
-- **GeoAI 2026** — 1st International Conference on Geospatial Artificial Intelligence (GeoAI 2026). Oral presentation. Ghent, Belgium. June 2026.
-- **SpatialDI 2026** — 7th International Conference on Spatial Data and Intelligence (ACM SIGSPATIAL China Chapter). Springer LNCS proceedings. Changsha, China. April 2026.
-
----
-
-## Selected Projects
-
-### Disaster Risk Monitoring from Satellite Radar
-*NVIDIA Deep Learning Institute · Earth Observation Track*
-
-U-Net trained on Sentinel-1 SAR imagery for flood-extent detection, with SAR-specific
-preprocessing (speckle filtering, dB conversion, polarization-aware augmentation).
-Dice 0.82, IoU 0.78. Inference pipeline integrated with Google Earth Engine.
-
-Same core problem as the urban growth work: multitemporal satellite stacks,
-sparse change signal, and a standard pipeline that doesn't account for
-what makes geospatial data different.
-
-[Repository](https://github.com/rohanbalixz/Disaster-Risk-Monitoring-Using-Satellite-Imagery)
-
-### Small-World Structure in Academic Collaboration
-*Advised by Prof. Dana S. Fine, University of Massachusetts Dartmouth*
-
-Co-authorship networks across 12 academic fields, 180K+ edges. 72% of researchers
-in the top citation percentile sit within 3 hops of each other in their field graph.
-The structure has consequences for how ideas and opportunity move through science.
-
-[Repository](https://github.com/rohanbalixz/Understanding-Academic-Collaboration-Networks-Through-Small-World-Theory)
-
----
+**Small-World Structure in Academic Collaboration**. Co-authorship networks across 12 fields and more than 180,000 edges. About 72% of the most-cited researchers sit within three hops of each other in their field. [Repository](https://github.com/rohanbalixz/Understanding-Academic-Collaboration-Networks-Through-Small-World-Theory)
 
 ## Currently
 
-Working on causal modeling for land-cover change and figuring out where and why
-spatiotemporal models fail when the geography shifts. Preparing follow-on submissions
-and PhD applications for Fall 2027.
+Figuring out where and why these models fall apart when the geography shifts, and getting the next papers and my PhD applications ready for Fall 2027. Based in Boston, MA. Happy to hear from anyone working on evaluation, generalization, uncertainty, or machine learning for Earth observation.
 
-Open to collaborations in geospatial AI, earth observation ML, and spatiotemporal
-representation learning.
-
-<p align="left">
-  <a href="mailto:rbali@umassd.edu">
-    <img src="https://img.shields.io/badge/Email-rbali@umassd.edu-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</p>
+rbali@umassd.edu
